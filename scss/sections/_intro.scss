@@ -1,0 +1,58 @@
+// =========================================================
+// INTRO: título principal y atajos a cada parte
+// =========================================================
+@use "../abstracts" as *;
+
+.intro {
+  max-width: 780px;
+  margin: 0 auto;
+  padding-block: 30px 56px;
+  text-align: center;
+
+  &__title {
+    font-size: clamp(3.2rem, 9vw, 6rem);
+    line-height: 0.98;
+    @include extrude(5, 10px);
+  }
+
+  &__lead {
+    max-width: 56ch;
+    margin: 20px auto 0;
+    font-family: font(text);
+    font-size: 1rem;
+    line-height: 1.7;
+    opacity: 0.88;
+  }
+
+  // ---------- Atajos ----------
+  &__jumps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0 0;
+    padding: 0;
+    list-style: none;
+
+    a {
+      display: block;
+      padding: 9px 16px;
+      border: 1.5px solid var(--line-onbg);
+      border-radius: $radius-pill;
+      color: color(cream);
+      font-family: font(tag);
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+      transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+
+      &:hover,
+      &:focus-visible {
+        border-color: color(yellow);
+        background: color(yellow);
+        color: color(green-deep);
+      }
+    }
+  }
+}

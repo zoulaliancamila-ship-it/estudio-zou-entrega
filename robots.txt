@@ -1,0 +1,5 @@
+# Estudio Zou · Entrega — instrucciones para buscadores
+User-agent: *
+Allow: /
+
+Sitemap: https://estudiozou-entrega.netlify.app/sitemap.xml

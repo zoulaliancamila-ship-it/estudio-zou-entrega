@@ -1,0 +1,34 @@
+// =========================================================
+// ESTUDIO ZOU · ENTREGA — Hoja de estilos de la landing
+// Compila a css/styles.css  →  npm run build:css
+//
+// Misma marca que el portfolio (abstracts y base son copias),
+// con solo las piezas que usa esta página.
+// =========================================================
+
+// Base
+@use "base/root";
+@use "base/reset";
+@use "base/typography";
+
+// Componentes
+@use "components/tag";
+@use "components/window";
+@use "components/button";
+@use "components/link";
+
+// Layout
+@use "layout/header";
+@use "layout/section";
+
+// Secciones (en el orden de la página)
+@use "sections/intro";
+@use "sections/entrega";
+@use "sections/contact";
+@use "sections/error";   // 404.html
+
+// Layout final
+@use "layout/footer";
+
+// Utilidades
+@use "utilities/accessibility";

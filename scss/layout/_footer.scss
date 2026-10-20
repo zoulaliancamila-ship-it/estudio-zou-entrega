@@ -1,0 +1,27 @@
+// =========================================================
+// FOOTER
+// =========================================================
+@use "../abstracts" as *;
+
+.footer {
+  padding: 30px var(--gutter);
+  background: color(red-deep);
+  border-top: 2px solid color(yellow);
+  font-family: font(label);
+  font-size: 0.8rem;
+  line-height: 1.8;
+  text-align: center;
+
+  p {
+    margin: 0;
+  }
+
+  &__brand {
+    font-family: font(title);
+    font-size: 1.6rem;
+  }
+
+  &__copy {
+    opacity: 0.7;
+  }
+}

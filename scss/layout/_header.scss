@@ -1,0 +1,53 @@
+// =========================================================
+// HEADER (fijo arriba): marca, portfolio y contacto
+// =========================================================
+@use "../abstracts" as *;
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px var(--gutter);
+  background: color(green-deep);
+  border-bottom: 1px solid var(--line-onbg);
+
+  &__brand {
+    color: color(cream);
+    font-family: font(title);
+    font-size: 1.9rem;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    text-transform: uppercase;
+    @include extrude(3, 6px);
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  &__link {
+    padding: 8px 14px;
+    border-radius: $radius-pill;
+    color: color(cream);
+    font-family: font(label);
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: var(--line-onbg);
+    }
+
+    @include respond(xxs) {
+      display: none;
+    }
+  }
+}

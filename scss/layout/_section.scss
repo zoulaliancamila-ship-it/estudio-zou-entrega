@@ -1,0 +1,23 @@
+// =========================================================
+// SECCIONES Y TÍTULOS DE SECCIÓN
+// =========================================================
+@use "../abstracts" as *;
+
+.section {
+  padding: 70px var(--gutter);
+  border-bottom: 1px dashed var(--line-onbg);
+  scroll-margin-top: 70px; // para que el header fijo no tape el título
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  @include respond(sm) {
+    padding: 50px 20px;
+  }
+}
+
+.section-title {
+  margin: 6px 0 0;
+  font-size: clamp(2.1rem, 4.2vw, 2.9rem);
+}
